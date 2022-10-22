@@ -39,16 +39,22 @@ namespace CriticalSlash
                         () => toggleDelegates.GetModEnabled() ? 1 : 0),
                     new CustomSlider("Window in Centi-seconds", 
                         val => GS.WindowInCentiSeconds = val,
-                        () => GS.WindowInCentiSeconds) 
-                        {minValue = 0, maxValue = 50f, wholeNumbers = true},
+                        () => GS.WindowInCentiSeconds,
+                        0f,
+                        50f,
+                        true),
                     new CustomSlider("Recovery Time Removed %", 
                         val => GS.RecoverySpeedIncreasePercent = val,
-                        () => GS.RecoverySpeedIncreasePercent) 
-                        {minValue = 0, maxValue = 100f, wholeNumbers = true},
+                        () => GS.RecoverySpeedIncreasePercent,
+                        0f,
+                        100f,
+                        true),
                     new CustomSlider("Damage Increase %", 
                         val => GS.DamageIncreasePercent = val,
-                        () => GS.DamageIncreasePercent)
-                        {minValue = 0, maxValue = 200f, wholeNumbers = true},
+                        () => GS.DamageIncreasePercent,
+                        0f,
+                        200f,
+                        true),
                     new MenuButton("Reset to Defaults", "", button =>
                     {
                         GS = new CriticalSlashSettings();
