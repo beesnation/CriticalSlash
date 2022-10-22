@@ -319,6 +319,9 @@
     <Reference Include="Satchel">
       <HintPath>$(HollowKnightRefs)/Mods/Satchel/Satchel.dll</HintPath>
     </Reference>
+    <Reference Include="HKMirror">
+      <HintPath>$(HollowKnightRefs)/Mods/HKMirror/HKMirror.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
