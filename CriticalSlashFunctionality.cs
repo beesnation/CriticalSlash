@@ -2,7 +2,7 @@ using System;
 using HutongGames.PlayMaker;
 using Modding;
 using Satchel.Futils;
-using Satchel.Reflected;
+using HKMirror.Reflection.SingletonClasses;
 
 namespace CriticalSlash {
     public static class CriticalSlashFunctionality{
